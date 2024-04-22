@@ -20,7 +20,7 @@ const isSectionExpanded = ref(false);
                     <slot name="title"></slot>
                 </span>
 
-                <img class="icon" :src="isSectionExpanded ? iconMinus : iconPlus" alt="icon">
+                <img class="icon" :src="isSectionExpanded ? iconMinus : iconPlus" alt="">
             </button>
         </h3>
 

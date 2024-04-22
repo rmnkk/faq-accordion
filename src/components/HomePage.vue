@@ -9,7 +9,7 @@ const desktopImage = new URL('../assets/images/background-pattern-desktop.svg', 
         <div class="decoration">
             <picture>
                 <source media="(max-width: 640px)" :srcset="mobileImage">
-                <img class="decoration-image" :src="desktopImage">
+                <img class="decoration-image" :src="desktopImage" alt="">
             </picture>
         </div>
         <TheAccordion />
