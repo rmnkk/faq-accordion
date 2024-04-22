@@ -31,7 +31,7 @@ const accordionData = [
 <template>
     <div class="accordion">
         <div class="header">
-            <img class="icon" :src="iconStar">
+            <img class="icon" :src="iconStar" alt="">
 
             <h2 class="title">
                 FAQs
