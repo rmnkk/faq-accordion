@@ -1,13 +1,41 @@
 <script setup lang="ts">
-
+import TheAccordion from '@/components/TheAccordion.vue';
+const mobileImage = new URL('../assets/images/background-pattern-mobile.svg', import.meta.url).href;
+const desktopImage = new URL('../assets/images/background-pattern-desktop.svg', import.meta.url).href;
 </script>
 
 <template>
-    <div>
-        <h1>Home Page</h1>
-        <p>Welcome to the Home Page</p>
+    <div class="container">
+        <div class="decoration">
+            <picture>
+                <source media="(max-width: 640px)" :srcset="mobileImage">
+                <img :src="desktopImage">
+            </picture>
+        </div>
+        <TheAccordion />
     </div>
 </template>
 
 
-<style scoped></style>
+<style scoped>
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 10.5rem 0;
+    background-color: var(--light-pink);
+
+    @media screen and (max-width: 640px) {
+        padding: 8.875rem 1.5rem;
+    }
+}
+
+.decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 320px;
+}
+</style>

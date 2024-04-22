@@ -6,21 +6,21 @@
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'WorkSans';
   font-weight: 400;
   font-style: normal;
   src: url('./fonts/WorkSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'WorkSans';
   font-weight: 600;
   font-style: normal;
   src: url('./fonts/WorkSans-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'WorkSans';
   font-weight: 700;
   font-style: normal;
   src: url('./fonts/WorkSans-Bold.ttf') format('truetype');
@@ -38,8 +38,9 @@ body {
   min-height: 100vh;
   font-size: 16px;
   line-height: 150%;
+  transition: all 0.25s linear;
   font-family:
-    'Work Sans',
+    'WorkSans',
     Inter,
     -apple-system,
     BlinkMacSystemFont,
