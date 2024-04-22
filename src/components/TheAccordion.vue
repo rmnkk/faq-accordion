@@ -39,7 +39,7 @@ const accordionData = [
         </div>
 
         <div>
-            <TheAccordionSection v-for="section in accordionData" :key="section.title">
+            <TheAccordionSection v-for="(section, index) in accordionData" :key="section.title" :index="index">
                 <template #title>
                     {{ section.title }}
                 </template>
